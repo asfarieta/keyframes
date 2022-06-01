@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+h1{
+    color: yellow;
+    text-align:center;
+}
+.cajapacman{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid blue;
+    height: 100vh;
+    background-image: url(data:image/png;base64,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);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    background-position y: 50%;
+}
+.pacman{
+    position: relative;
+    animation: pacmancorre 15s infinite;
+}
+@keyframes pacmancorre{
+    0%   {top: -500px; left: 0px;}
+    10%  {top:-500px; left: 1200px;}
+    15%  {top: -400px; left: 1200px;}
+    20% {top: -400px; left: 0px;}
+    25%  {top: -300px; left: 0px;}
+    30%  {top: -300px; left: 1200px;}
+    35%  {top: -200px; left: 1200px;}
+    40% {top: -200px; left: 0px;}
+    45%   {top: -100px; left: 0px;}
+    50%  {top: -100px; left: 1200px;}
+    60%  {top: 0px; left: 1200px;}
+    65%  {top: 0px; left: 0px;}
+    70% {top: 100px; left: 0px;}
+    75%  {top: 100px; left: 1200px;}
+    80%  {top: 200px; left: 1200px;}
+    85%  {top: 200px; left: 0px;}
+    90% {top: 300px; left: 0px;}
+    95%  {top: 300px; left: 1200px;}
+    100% {top: 400px; left: 1200px;}
+  }
